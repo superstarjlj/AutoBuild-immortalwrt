@@ -13,16 +13,20 @@
 # Uncomment a feed source
 #sed -i 's/^#\(.*helloworld\)/\1/' feeds.conf.default
 
-src-git packages https://github.com/coolsnowwolf/packages
-src-git luci https://github.com/coolsnowwolf/luci
-src-git routing https://github.com/coolsnowwolf/routing
-src-git telephony https://git.openwrt.org/feed/telephony.git
-#src-git helloworld https://github.com/fw876/helloworld
-#src-git kenzok https://github.com/kenzok8/openwrt-packages
-#src-git small8 https://github.com/kenzok8/small-package
+echo 'src-git packages https://github.com/coolsnowwolf/packages' >>feeds.conf.default
+echo 'src-git luci https://github.com/coolsnowwolf/luci' >>feeds.conf.default
+echo 'src-git routing https://github.com/coolsnowwolf/routing' >>feeds.conf.default
+echo 'src-git telephony https://git.openwrt.org/feed/telephony.git' >>feeds.conf.default
+#echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
+#echo 'src-git kenzok https://github.com/kenzok8/openwrt-packages' >>feeds.conf.default
+#echo 'src-git small8 https://github.com/kenzok8/small-package' >>feeds.conf.default
 
-src-git openclash https://github.com/vernesong/OpenClash.git
-src-git passwall2 https://github.com/xiaorouji/openwrt-passwall2.git
+echo 'src-git openclash https://github.com/vernesong/OpenClash.git' >>feeds.conf.default
+echo 'src-git passwall2 https://github.com/xiaorouji/openwrt-passwall2.git' >>feeds.conf.default
+
+
+
+
 
 # Add a feed source
 #echo 'src-git helloworld https://github.com/fw876/helloworld' >>feeds.conf.default
